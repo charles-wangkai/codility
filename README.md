@@ -1,0 +1,2 @@
+# codility
+My Codility codes
