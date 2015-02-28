@@ -80,7 +80,8 @@ $(document).ready(function() {
   };
   problemsMarkerForChallenges.extractName = function($problemLink) {
     var challenge2name = {
-      'alpha2010': 'PrefixSet'
+      'alpha2010': 'PrefixSet',
+      'beta2010': 'NumberOfDiscIntersections'
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
