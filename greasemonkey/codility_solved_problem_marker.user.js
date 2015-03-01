@@ -84,6 +84,7 @@ $(document).ready(function() {
       'beta2010': 'NumberOfDiscIntersections',
       'gamma2011': 'CountPalindromicSlices',
       'delta2011': 'MinAbsSum',
+      'epsilon2011': 'Minfuds',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
