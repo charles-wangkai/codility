@@ -85,6 +85,7 @@ $(document).ready(function() {
       'gamma2011': 'CountPalindromicSlices',
       'delta2011': 'MinAbsSum',
       'epsilon2011': 'Minfuds',
+      'zeta2011': 'BallSwitchBoard',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
