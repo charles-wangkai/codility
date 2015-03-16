@@ -87,6 +87,7 @@ $(document).ready(function() {
       'epsilon2011': 'Minfuds',
       'zeta2011': 'BallSwitchBoard',
       'eta2011': 'HamiltonianRoutesCount',
+      'theta2011': 'GasStations',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
