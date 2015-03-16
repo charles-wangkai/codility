@@ -86,6 +86,7 @@ $(document).ready(function() {
       'delta2011': 'MinAbsSum',
       'epsilon2011': 'Minfuds',
       'zeta2011': 'BallSwitchBoard',
+      'eta2011': 'HamiltonianRoutesCount',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
