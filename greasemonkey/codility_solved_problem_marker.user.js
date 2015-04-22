@@ -89,6 +89,7 @@ $(document).ready(function() {
       'eta2011': 'HamiltonianRoutesCount',
       'theta2011': 'GasStations',
       'iota2011': 'ShortestAdjSeq',
+      'kappa2011': 'SpaceCrews',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
