@@ -90,6 +90,7 @@ $(document).ready(function() {
       'theta2011': 'GasStations',
       'iota2011': 'ShortestAdjSeq',
       'kappa2011': 'SpaceCrews',
+      'lambda2011': 'MinRouterPeripherality',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
