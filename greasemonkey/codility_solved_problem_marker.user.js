@@ -91,6 +91,7 @@ $(document).ready(function() {
       'iota2011': 'ShortestAdjSeq',
       'kappa2011': 'SpaceCrews',
       'lambda2011': 'MinRouterPeripherality',
+      'mu2011': 'NumberOfZeros',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
