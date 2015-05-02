@@ -92,6 +92,7 @@ $(document).ready(function() {
       'kappa2011': 'SpaceCrews',
       'lambda2011': 'MinRouterPeripherality',
       'mu2011': 'NumberOfZeros',
+      'nu2011': 'DoubleMedian',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
