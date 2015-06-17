@@ -37,6 +37,12 @@ $(document).ready(function() {
       var self = this;
 
       var name = this.extractName($problemLink);
+      if (!name) {
+        return;
+      }
+      if (name.endsWith('/')) {
+        name = name.substr(0, name.length - 1);
+      }
 
       var url = 'https://raw.githubusercontent.com/charles-wangkai/codility/master/' + name + '.java';
       GM_xmlhttpRequest({
