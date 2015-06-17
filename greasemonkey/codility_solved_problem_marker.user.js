@@ -93,6 +93,7 @@ $(document).ready(function() {
       'lambda2011': 'MinRouterPeripherality',
       'mu2011': 'NumberOfZeros',
       'nu2011': 'DoubleMedian',
+      'xi2012': 'KSparseBinaryCount',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
