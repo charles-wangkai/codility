@@ -100,6 +100,7 @@ $(document).ready(function() {
       'mu2011': 'NumberOfZeros',
       'nu2011': 'DoubleMedian',
       'xi2012': 'KSparseBinaryCount',
+      'omicron2012': 'PowerFib',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
