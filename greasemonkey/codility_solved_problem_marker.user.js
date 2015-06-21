@@ -101,6 +101,7 @@ $(document).ready(function() {
       'nu2011': 'DoubleMedian',
       'xi2012': 'KSparseBinaryCount',
       'omicron2012': 'PowerFib',
+      'pi2012': 'ArrayClosestAscenders',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
