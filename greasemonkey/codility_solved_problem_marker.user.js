@@ -103,6 +103,7 @@ $(document).ready(function() {
       'omicron2012': 'PowerFib',
       'pi2012': 'ArrayClosestAscenders',
       'rho2012': 'HitTheNumber',
+      'sigma2012': 'StoneWall',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
