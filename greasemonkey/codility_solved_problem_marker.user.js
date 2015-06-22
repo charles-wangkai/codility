@@ -102,6 +102,7 @@ $(document).ready(function() {
       'xi2012': 'KSparseBinaryCount',
       'omicron2012': 'PowerFib',
       'pi2012': 'ArrayClosestAscenders',
+      'rho2012': 'HitTheNumber',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
