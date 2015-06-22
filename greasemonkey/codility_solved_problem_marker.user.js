@@ -104,6 +104,7 @@ $(document).ready(function() {
       'pi2012': 'ArrayClosestAscenders',
       'rho2012': 'HitTheNumber',
       'sigma2012': 'StoneWall',
+      'tau2012': 'TorusLot',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
