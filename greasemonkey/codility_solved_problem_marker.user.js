@@ -105,6 +105,7 @@ $(document).ready(function() {
       'rho2012': 'HitTheNumber',
       'sigma2012': 'StoneWall',
       'tau2012': 'TorusLot',
+      'upsilon2012': 'CartesianSequence',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
