@@ -106,6 +106,7 @@ $(document).ready(function() {
       'sigma2012': 'StoneWall',
       'tau2012': 'TorusLot',
       'upsilon2012': 'CartesianSequence',
+      'phi2012': 'TilingsCount',
     };
 
     return challenge2name[$problemLink.attr('href').trim().substr('/programmers/challenges/'.length)];
