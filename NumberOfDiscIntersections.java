@@ -1,22 +1,21 @@
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class NumberOfDiscIntersections {
 	static final int LIMIT = 10000000;
 
 	public int solution(int[] A) {
-		Point[] points = new Point[A.length * 2];
+		long[] points = new long[A.length * 2];
 		for (int i = 0; i < A.length; i++) {
-			points[i * 2] = new Point((long) i - A[i], Type.LOWER);
-			points[i * 2 + 1] = new Point((long) i + A[i], Type.UPPER);
+			points[i * 2] = generatePoint((long) i - A[i], true);
+			points[i * 2 + 1] = generatePoint((long) i + A[i], false);
 		}
 
-		Arrays.sort(points, new PointComparator());
+		Arrays.sort(points);
 
 		int intersectNum = 0;
 		int openedNum = 0;
-		for (Point point : points) {
-			if (point.type.equals(Type.LOWER)) {
+		for (long point : points) {
+			if (isLeft(point)) {
 				intersectNum += openedNum;
 				if (intersectNum > LIMIT) {
 					return -1;
@@ -28,28 +27,12 @@ public class NumberOfDiscIntersections {
 		}
 		return intersectNum;
 	}
-}
 
-class PointComparator implements Comparator<Point> {
-	@Override
-	public int compare(Point p1, Point p2) {
-		if (p1.y != p2.y) {
-			return (int) Math.signum(p1.y - p2.y);
-		}
-		return p1.type.equals(Type.LOWER) ? -1 : 1;
+	long generatePoint(long x, boolean leftOrRight) {
+		return x * 2 - (leftOrRight ? 1 : 0);
 	}
-}
 
-class Point {
-	long y;
-	Type type;
-
-	Point(long y, Type type) {
-		this.y = y;
-		this.type = type;
+	boolean isLeft(long point) {
+		return point % 2 != 0;
 	}
-}
-
-enum Type {
-	LOWER, UPPER
 }
